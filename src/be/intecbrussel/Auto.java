@@ -3,7 +3,7 @@ package be.intecbrussel;
 public class Auto {
 
     private String merkNaam = "Nog geen automerk gekend";
-    private Garage garage;
+    private Garage garage = new Garage("Nog geen garage gekend");
 
 
     public Auto(String merkNaam, Garage garage) {
@@ -39,6 +39,6 @@ public class Auto {
     }
 
     public String toString() {
-        return "Auto: " + getMerkNaam() + " Garage: " + getGarage();
+        return "Auto: " + merkNaam + " Garage: " + garage.toString();
     }
 }
